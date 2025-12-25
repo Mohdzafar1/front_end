@@ -1,0 +1,97 @@
+.footer {
+  background-color: #8a8a8a;
+  padding: 60px 0;
+  color: #fff;
+}
+
+.footer h5 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer ul li:hover {
+  text-decoration: underline;
+}
+
+/* Stay Connected */
+.email-form {
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.email-form input {
+  border: none;
+  border-radius: 0;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.email-form input:focus {
+  box-shadow: none;
+}
+
+.email-form button {
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.contact p {
+  margin: 5px 0 20px;
+  font-size: 14px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons svg {
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  border-radius: 50%;
+  background: #0b1fd0;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .email-form {
+    flex-direction: column;
+    border-radius: 12px;
+  }
+
+  .email-form button {
+    padding: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

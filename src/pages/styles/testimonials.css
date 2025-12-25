@@ -1,0 +1,114 @@
+.testimonial-section {
+  padding: 60px 0;
+}
+
+/* Header */
+.testimonial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.testimonial-header h2 {
+  color: #0b1fd0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.arrows button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #0b1fd0;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Scroll */
+.testimonial-scroll {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.testimonial-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card */
+.testimonial-card {
+  flex: 0 0 calc((100% - 48px) / 3); /* 3 cards + gap */
+  border: 1.5px solid #222;
+  border-radius: 16px;
+  padding: 20px;
+  background: #fff;
+}
+
+
+/* Top */
+.testimonial-top {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1.5px solid #222;
+  overflow: hidden;              /* 🔥 IMPORTANT */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             /* 🔥 IMPORTANT */
+  border-radius: 50%;
+}
+
+
+/* Name & stars */
+.testimonial-card h5 {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.stars {
+  color: #ff9800;
+  display: flex;
+  gap: 4px;
+}
+
+/* Text */
+.testimonial-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* Show 1 card per view on mobile */
+  .testimonial-card {
+    flex: 0 0 100%;
+  }
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+  }
+}
+

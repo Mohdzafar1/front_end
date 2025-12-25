@@ -1,0 +1,77 @@
+.shop-section {
+  padding: 50px 0;
+}
+
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.arrows button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  /* color: #0b1c8f; */
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+/* Scroll */
+.scroll-wrapper {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card */
+.body-card {
+  min-width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Circle */
+.icon-circle {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  /* background: #0b1c8f;   🔥 IMPORTANT */
+}
+
+/* Image FIX */
+.icon-circle img {
+  width: 65%;
+  height: 65%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Text */
+.body-card p {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .icon-circle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .body-card {
+    min-width: 160px;
+  }
+}
