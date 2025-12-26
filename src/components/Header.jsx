@@ -32,25 +32,34 @@ const Header = () => {
           </Navbar.Brand>
 
           {/* Search */}
-          <Form className="d-flex flex-grow-1 mx-4 position-relative" style={{ maxWidth: "500px" }}>
-            <FormControl
-              type="search"
-              placeholder="Enter SKU or product name"
-              className="rounded-pill ps-3 pe-5"
-              style={{ boxShadow: "none" }}
-            />
-            <FaSearch
-              style={{
-                position: "absolute",
-                right: "15px",
-                top: "50%",
-                transform: "translateY(-50%)",
-                fontSize: "16px",
-                color: "#0b1c8f",
-                pointerEvents: "none",
-              }}
-            />
-          </Form>
+        <Form
+  className="d-flex position-relative mx-2 mx-lg-4 w-100"
+  style={{ maxWidth: "100%" }}
+>
+  <FormControl
+    type="search"
+    placeholder="Search products..."
+    className="rounded-pill ps-4 pe-5"
+    style={{
+      boxShadow: "none",
+      height: "46px",          // mobile height
+      fontSize: "14px",
+    }}
+  />
+
+  <FaSearch
+    style={{
+      position: "absolute",
+      right: "16px",
+      top: "50%",
+      transform: "translateY(-50%)",
+      fontSize: "17px",
+      color: "#0b1c8f",
+      pointerEvents: "none",
+    }}
+  />
+</Form>
+
 
           {/* Icons */}
           <div className="d-flex align-items-center gap-3 fs-5">
